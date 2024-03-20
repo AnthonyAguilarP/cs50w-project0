@@ -175,7 +175,6 @@ body {
     border: 1px solid #dfe1e5;
     color: black;
   }
-  
   footer {
     width: 100%;
     height: 50px;
@@ -189,6 +188,13 @@ body {
     display: grid;
   
     grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: 800px) {
+
+    footer {
+      display: none;
+    }
+    
   }
   
   footer ul {
@@ -215,4 +221,75 @@ body {
     position: absolute;
     margin-top: 70px;
     font-size: 16px;
+  }
+
+  header {
+    height: 150px;
+}
+.ad-logo {
+    margin-top: 25px;
+    margin-left: 25px;
+    height: 27px;
+  
+    cursor: pointer;
+
+    position: absolute;
+  }
+  .line {
+    background-color: rgba(74, 74, 74, 0.259);
+    height: 0.5px;
+    width: 100%;
+  }
+  .ad-subtitle {
+    font-size: 18px;
+    color: #ff0000;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+  .ad-search {
+    height: 23px;
+    width: 90%;
+  }
+  .row {
+    display: flex;
+    margin-top: 20px;
+  }
+  .left {
+    width: 20%;
+    margin-left: 50px;
+    align-items: center;
+  }
+  .center {
+    width: 40%;
+  }
+  .right {
+    width: 30%;
+  }
+  .end {
+    width: 10%;
+  }
+  .ad-btn {
+    background-color: #4d68ff;
+    width: 140px;
+    height: 40px;
+    padding: 10px;
+    color: #ffffff;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .ad-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ad-submit {
+    width: 100%;
+    padding: 30px 0 30px 0;
+  }
+
+  .ad-submit button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
