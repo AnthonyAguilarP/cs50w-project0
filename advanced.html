@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+        header {
+            height: 150px;
+        }
+        .ad-logo {
+            margin-top: 25px;
+            margin-left: 25px;
+            height: 27px;
+          
+            cursor: pointer;
+
+            position: absolute;
+          }
+          .line {
+            background-color: rgba(74, 74, 74, 0.259);
+            height: 0.5px;
+            width: 100%;
+          }
+          .ad-subtitle {
+            font-size: 18px;
+            color: #ff0000;
+            margin-top: 50px;
+            margin-left: 50px;
+          }
+          .ad-search {
+            height: 23px;
+            width: 90%;
+          }
+          .row {
+            display: flex;
+            margin-top: 20px;
+          }
+          .left {
+            width: 20%;
+            margin-left: 50px;
+            align-items: center;
+          }
+          .center {
+            width: 40%;
+          }
+          .right {
+            width: 30%;
+          }
+          .end {
+            width: 10%;
+          }
+          .ad-btn {
+            background-color: #4d68ff;
+            width: 140px;
+            height: 40px;
+            padding: 10px;
+            color: #ffffff;
+            border: none;
+            font-size: 14px;
+            font-weight: bold;
+          }
+          .ad-submit {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .ad-submit {
+            width: 100%;
+            padding: 30px 0 30px 0;
+          }
+
+          .ad-submit button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+    </style>
+</head>
+<body>
+    <header>
+      <a href="./index.html">
+        <img src="./assets/google.png" class="ad-logo"/>
+      </a>
+        <nav>
+            <ul class="nav-right-section">
+              <li>
+                <a href="https://mail.google.com/mail">Gmail</a>
+              </li>
+    
+              <li>
+                <a href="./image.html">Images</a>
+              </li>
+    
+              <li>
+                <a href="./advanced.html">Advanced</a>
+              </li>
+    
+              <li class="menu-icon"></li>
+    
+              <li>
+                <a href="">
+                  <img src="./assets/prof.png" style="width: 20px;"/>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <p class="ad-subtitle">Advanced Search</p>
+    </header>
+    <div class="line"></div>
+    <form action="https://www.google.com/search" method="GET">
+        <div class="row">
+            <div class="left">todas estas palabras:</div>
+            <div class="center"><input type="text" class="ad-search" name="as_q"/></div>
+            <div class="right">Ingresa las palabras importantes: Terrier ratonero tricolor .</div>
+            <div class="end"></div>
+        </div>
+        <div class="row">
+            <div class="left">esta palabra o frase exactas:</div>
+            <div class="center"><input type="text" class="ad-search" name="as_epq"/></div>
+            <div class="right">Ingresa las palabras exactas entre comillas: "Terrier ratonero" .</div>
+            <div class="end"></div>
+        </div>
+        <div class="row">
+            <div class="left">cualquiera de estas palabras:</div>
+            <div class="center"><input type="text" class="ad-search" name="as_oq" /></div>
+            <div class="right">Ingresa OR entre las palabras que desees: En miniatura OR estándar .</div>
+            <div class="end"></div>
+        </div>
+        <div class="row">
+            <div class="left">ninguna de estas palabras:</div>
+            <div class="center"><input type="text" class="ad-search" name="as_eq" /></div>
+            <div class="right">Ingresa un signo menos justo delante de las palabras que no deseas que aparezcan: -Roedor, -"Jack Russell" .</div>
+            <div class="end"></div>
+        </div>
+        <div class="ad-submit">
+            <!-- <button type="submit" name="btnI" class="ad-btn">Advanced Search</button> -->
+            <input type="submit" value="Advanced Search" class="ad-btn">
+        </div>
+        <div class="line"></div>
+    </form>
+    <footer>
+        <ul class="footer-left">
+          <li><a href="https://about.google">About</a></li>
+          <li><a href="https://ads.google.com">Advertising</a></li>
+          <li><a href="https://smallbusiness.withgoogle.com">Business</a></li>
+          <li>
+            <a href="https://google.com/search/howsearchworks"
+              >How search works</a
+            >
+          </li>
+        </ul>
+        <ul class="footer-right">
+          <li><a href="">Privacy</a></li>
+          <li><a href="">Terms</a></li>
+          <li><a href="">Settings</a></li>
+        </ul>
+      </footer>
+</body>
+</html>
